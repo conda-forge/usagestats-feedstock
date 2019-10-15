@@ -1,6 +1,6 @@
 {% set name = "usagestats" %}
-{% set version = "0.7" %}
-{% set sha256 = "39cf0736dfec40c85416270fc43382bdef7af18da85e1e243075f145fe2b8aef" %}
+{% set version = "0.8" %}
+{% set sha256 = "20da296e38d5bdae46f119ea7e5703757ac97b9ebf2e6ad5b7a3676146af26f8" %}
 
 package:
   name: {{ name|lower }}
@@ -13,8 +13,8 @@ source:
 
 build:
   noarch: python
-  number: 1
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
