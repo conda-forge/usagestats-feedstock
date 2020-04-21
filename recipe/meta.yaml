@@ -1,6 +1,6 @@
 {% set name = "usagestats" %}
-{% set version = "0.8" %}
-{% set sha256 = "20da296e38d5bdae46f119ea7e5703757ac97b9ebf2e6ad5b7a3676146af26f8" %}
+{% set version = "1.0" %}
+{% set sha256 = "e52b1d9a08dd57fdde88882e3c2dc24d792ab7b898dbdf2f47a57a7daaa7c322" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -34,7 +34,7 @@ about:
   home: http://github.com/remram44/usagestats
   license: Apache-2.0
   license_file: LICENSE.txt
-  summary: 'Anonymous usage statistics collecter'
+  summary: Anonymous usage statistics collecter
   description: |
     This package is meant to easily get usage statistics from the users of your
     program.
