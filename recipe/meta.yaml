@@ -1,6 +1,6 @@
 {% set name = "usagestats" %}
-{% set version = "1.0" %}
-{% set sha256 = "e52b1d9a08dd57fdde88882e3c2dc24d792ab7b898dbdf2f47a57a7daaa7c322" %}
+{% set version = "1.0.1" %}
+{% set sha256 = "d8887aa0f65769b1423b784e626ec6fb6ba6ed1432667e10d6115b783571be6d" %}
 
 package:
   name: {{ name|lower }}
